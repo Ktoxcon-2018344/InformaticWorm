@@ -1,0 +1,167 @@
+
+.header{
+    background-color: #3E4147;
+    height: auto;
+    width: auto;
+    font-family: Lucida Console;
+    font-size: 80px;
+    color:#BAB7B7;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo{
+    height: 30px;
+    background-color: #868181;
+    font-family: Lucida Console;
+    font-size: 25px;
+    color:black;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lateralDerecho{
+    position: relative;
+    margin-right: top;
+    width: 150px;
+    height: 250px;
+    float: right;
+    background-color: #646363;
+    border-style: inset;
+    border-radius: 6px;
+    color: whitesmoke;
+}
+.lateralIzquierdo{
+    position: absolute;
+    height: 250px;
+    background-color: #646363;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-style: inset;
+    border-radius: 6px;
+    color: whitesmoke;
+}
+
+.posts{
+  display: flex;
+  justify-content: center; 
+  width: auto;
+  height: 2000px;
+  margin-top: 5px; 
+  margin-right: -160px;
+}
+
+#area{
+    height: 2000px;
+    width: 1000px;
+    border-style: hidden;
+}
+
+#thw{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+}
+
+#thw:hover{
+    color: black;
+}
+
+#uieldm{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+}
+
+#uieldm:hover{
+    color: black;
+}
+
+#dj{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+}
+
+#dj:hover{
+    color: black;
+}
+
+#wls{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+}
+
+#wls:hover{
+    color: black;
+}
+
+#hw{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+}
+
+#hw:hover{
+    color: black;
+}
+
+#uc{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+}
+
+#uc:hover{
+    color: black;
+}
+
+#hpp{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+}
+
+#hpp:hover{
+    color: black;
+}
+
+/* barra de memu principal*/
+
+body{
+  margin: 0;
+  background-color: #D3D3D3;
+}
+
+.barra{
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.barra a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.barra a.active {
+  background-color: #4CAF50;
+  color: white;
+}

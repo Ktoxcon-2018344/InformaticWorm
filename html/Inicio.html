@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="/proyecto/css/Inicio.css">
+</head>
+<body>
+	<center>
+		<div id="titulo"><h1>Bienvenido</h1></div>
+	</center>
+	<hr>
+	<center>
+		<div id="inicio">
+			<p>Bienevenido, este es un blog enfocado a la seguridad informática donde podras encontrar:
+			   Noticias, tutoriales, Investigaciones, Pruebas de Concepto y una gran cantidad de atículos relacionados a 
+			   al hacking y la seguridad de sistemas. Además te ofrecemos la oportunidad de crear una cuenta
+			   para que puedas publicar tus propios contenidos y hacer más grande la comunidad, siempre cumpliendo
+			   las políticas de la página.
+			</p>
+		</div>
+	</center>
+	<hr>
+	<div id="contenedorArticulos">
+
+		<div id="1">
+			<h1 id="titulo">Redes Virtuales Privadas</h1>
+			<div id="contenidoArticulo">
+				<h2 id="autor">Por Adastra</h2>
+				<p>
+					Las redes virtuales privadas o VPN por sus siglas en Inglés, representan una tecnología que ha sido
+					empleada para utilizar medios de comunicación poco seguros como Internet de modo privado, donde
+					solamente aquellos participantes autorizados podrán acceder a un canal de comunicación dedicado.
+					En una VPN, los usuarios utilizan un canal de comunicación que típicamente se encuentra
+					debidamente asegurado utilizando mecanismos de cifrado que permiten proteger la confidencialidad
+					y la integridad los datos intercambiados.
+					Por otro lado, es común encontrarse con tres tipos principales de redes VPN: Punto a Punto, VPN con
+					acceso remoto y VPN sobre LAN. Las redes VPN punto a punto se basan en el encapsulamiento de la
+					información utilizando protocolos de red como L2F, L2TP o SSH para el establecimiento de túneles.
+					Por otro lado, las redes virtuales con acceso remoto y las redes virtuales sobre LAN, funcionan de
+					un modo muy similar, el cual consiste en permitir que cualquier usuario pueda conectarse de forma
+					remota a los servicios de una empresa u organización utilizando mecanismos de autenticación y
+					autorización seguros. La diferencia entre ambos modelos radica en que en las redes virtuales con
+					acceso remoto, los usuarios podrán conectarse desde sitios remotos utilizando Internet, mientras
+					que en las redes sobre LAN el medio de conexión es la red local, esto con el fin de crear zonas
+					restringidas o limitar el acceso a determinados servicios dentro de la misma red local.
+					Tal como se verá en el siguiente capítulo de este documento, las redes privadas virtuales son una
+					tecnología en la cual se basan varios servicios de anonimato en Internet, tales como TOR, I2P o
+					FreeNet, permitiendo que la información intercambiada en dichas redes sea transmitida de forma
+					íntegra, confidencial, anónima y segura.
+					Las redes virtuales pueden implementarse a nivel de hardware o de software, siendo las soluciones
+					basadas en hardware las que aportan mucha más potencia y facilidades de configuración, no obstante
+					las soluciones basadas en software son mucho más flexibles e interoperables sobre diferentes
+					arquitecturas. A continuación, se explica el uso de algunas VPN disponibles en el mercado.
+				</p>
+				<h3>
+					OpenVPN
+				</h3>
+				<p>
+					OpenVPN es una solución de VPN opensource que se caracteriza por ofrecer un canal cifrado,
+					privado y protegido utilizando OpenSSL para crear túneles privados. Se trata de una aplicación
+					bastante robusta y estable que se ha consolidado como una de las mejores en el campo de las VPN
+					disponibles en el mercado. OpenVPN tiene una versión comunitaria que se distribuye como software
+					libre, la versión 2 de OpenVPN tiene una licencia es GNU/GPLv2 y la versión 3 tiene una la licencia
+					GNU/AGPL. Es posible desplegar clientes y servidores en Windows, Linux o MAC y los instaladores
+					pueden descargarse libremente en el siguiente enlace: http://openvpn.net/index.php/download/
+					community-downloads.html. En sistemas basados en Debían, basta con ejecutar la utilidad apt-get o
+					aptitute para instalar OpenVPN.
+					>apt-get install openvpn
+					Después de finalizar el proceso de instalación, es necesario configurar la VPN y para ello hace
+					falta en primer lugar, generar los certificados y claves para que los clientes puedan conectarse. A
+					continuación se explica paso a paso el proceso de configuración.
+					Configuración para el servidor OpenVPN
+					1. El directorio de configuración de OpenVPN se encuentran ubicado en “/etc/openvpn” y es
+					allí donde se deben almacenar los certificados y claves que aceptará la VPN. Para un inicio
+					rápido, se cuenta con algunos ejemplos de configuración que pueden ser personalizados según
+					las necesidades particulares de los usuarios. El primer paso es copiar el contenido completo
+					del directorio “easy-rsa” al directorio “/etc/openvpn", el directorio “easy-rsa" se encuentra
+					ubicado en “/usr/share/doc/openvpn/examples/easy-rsa/” e incluye dos directorios más que son
+					“1.0” y “2.0". En dichos directorios se encuentran las utilidades necesarias para comenzar a
+					construir certificados de autoridad (CA).
+					cp -r /usr/share/doc/openvpn/examples/easy-rsa/ /etc/openvpn/
+					2. En el directorio “/etc/openvpn/easy-rsa/2.0” se debe editar el fichero “vars” para incluir los
+					datos relacionados con el certificado de autoridad que se va a generar, es importante cambiar los
+					valores que se incluyen por defecto en este fichero, especialmente los datos correspondientes a
+					la provincia, país, días de expiración, etcétera
+				</p>
+				<h3>
+					Hamachi
+				</h3>
+				<p>
+					Hamachi es una VPN robusta que puede ser utilizada en sistemas Windows, Mac y Linux. No
+					obstante no se trata de una red centralizada ni libre, como es el caso de OpenVPN, de hecho, es una
+					red mantenida y administrada por la empresa “logmein”. Cualquiera puede descargar el software y
+					crear redes virtuales que pueden ser utilizadas por cualquier persona con conexión a Internet, sin
+					embargo hay ciertas restricciones que limitan su uso, como por ejemplo, el número de usuarios que
+					pueden estar conectados a una red, entre otras cosas.
+				</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="otrosArticulos">
+			
+
+		</div>
+
+	</div>
+</body>
+</html>
